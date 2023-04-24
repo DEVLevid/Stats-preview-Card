@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violete: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-tranparent-white: hsla(0, 0%, 100%, 0.6);
+    background-color: var(--Very-dark-blue);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: #000;
+}
+.main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: var(--Dark-desaturated-blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
+
+span{
+    color: var(--soft-violete);
+}
+
+h1{
+    font-size: 20pt;
+}
+
+p{
+    font-size: 10pt;
+    color: var(--Slightly-tranparent-white);
+}
+
+.card-left{
+    gap: 2rem;
+    padding: 1rem;
+}
+
+
+.informations h1{
+    font-size: 14pt;
+}
+
+.description{
+    padding-top: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.container .card-rigth{
+    width: 50%;
+    height: auto;
+}
+
+.container img{
+    width: 50%;
+}
+
