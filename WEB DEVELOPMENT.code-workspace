@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Documents/WEB DEVELOPMENT"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "stats-preview-card-component-main"
+	}
+}
