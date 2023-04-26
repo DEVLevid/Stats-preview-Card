@@ -24,12 +24,13 @@ body{
     align-items: center;
     font-weight: 13pt;
 }
+
 .main{
+    width: 1020px;
     margin: 0 auto;
 }
 
 .container{
-    width: 1010px;
     background-color: var(--Dark-desaturated-blue);
     color: var(--white);
     display: grid;
@@ -42,6 +43,7 @@ body{
 .img-container img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .img-container{
@@ -81,7 +83,7 @@ p{
 }
 
 .text-container{
-    padding: 13%;
+    padding: 18%;
 }
 
 .informations{
@@ -109,4 +111,47 @@ p{
     margin-bottom: 4rem;
 }
 
+@media only screen and (max-width: 425px){
+    
+    body{
+        text-align: center;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .img-container{
+        order: -1;
+    }
+
+    .text-container{
+        padding: 8%;
+    }
+
+    .informations{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .title{
+        line-height: 1.5;
+        font-size: 15pt;
+    }
+    
+}
+
+@media only screen and (max-width: 780px) and (min-width: 425px){
+    body{
+        font-size: 12pt;
+    }
+
+    .text-container{
+        padding: 12%;
+    }
+
+    .title{
+        font-size: 22pt;
+    }
+}
 
